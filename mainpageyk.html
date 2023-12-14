@@ -1,0 +1,1128 @@
+<!DOCTYPE HTML "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html class lang="en-US">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript">window.OutSystemsApp = { basePath: '/ExamsLegacy/' };</script>
+    <link rel="stylesheet" type="text/css" href="styleexame">
+
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function () {
+            function appendMetaTagAttributes(metaTag, attribute, values) {
+                var elem = document.querySelector("meta[name=" + metaTag + "]");
+
+                if (elem) {
+                    var attrContent = elem.getAttribute(attribute);
+                    elem.setAttribute(attribute, (attrContent ? attrContent + "," : "") + values.join(","));
+                }
+            }
+
+            if (navigator && /OutSystemsApp/i.test(navigator.userAgent)) {
+                // If this app is running on the native shell, we want to disable the zoom
+                appendMetaTagAttributes("viewport", "content", ["user-scalable=no", "minimum-scale=1.0"]);
+            }
+        })();</script>
+
+    <script type="text/javascript" src="scripts/OutSystemsManifestLoader.js?3F3fZzzNKkqKoP2DsjtxFw"></script>
+    <script type="text/javascript" src="scripts/OutSystems.js?EhsMqL9pM_HmXeF8zbDIkQ"></script>
+    <script type="text/javascript" src="scripts/OutSystemsReactView.js?2q7pDIZQCcX4CUlCJ9xQwg"></script>
+    <script type="text/javascript" src="scripts/NullDebugger.js?qd4g+SbvNb7gjBWMq8Z5Zg"></script>
+    <script type="text/javascript" src="scripts/ExamsLegacy.appDefinition.js?8CvIsQZP0u5iaQs3FlOVcw"></script>
+    <script type="text/javascript" src="scripts/OutSystemsReactWidgets.js?SURSHoK3iOqvdQXBFeIl9g"></script>
+    <link type="text/css" rel="stylesheet" href="_Basic.css">
+
+    <script type="text/javascript">OSManifestLoader.indexVersionToken = "MKaxLKedvHR98ZGYMy0K6Q";
+    </script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.controller"
+        src="/ExamsLegacy/scripts/ExamsLegacy.controller.js?q89kS3ZbYc6WgWl5XXlhHw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.model.js?mf+MzgzfsD2Xy5qQkT7zug"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.MainFlow.Home.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.MainFlow.Home.mvc.js?G93+swkpmEHx34bJfB8ZCg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.MainFlow.controller"
+        src="/ExamsLegacy/scripts/ExamsLegacy.MainFlow.controller.js?+S9QiXWla3HRfAIKTEeF+g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.controller"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.controller.js?wPXENb7s_u6yJh9miHKs0g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.clientVariables"
+        src="/ExamsLegacy/scripts/ExamsLegacy.clientVariables.js?whUbvYakqZCE7gBKsjVd7g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTLayouts.MobileLayout.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTLayouts.MobileLayout.mvc.js?eSNXBoLW8agqJyJf6CvPQg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.Menu.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.Menu.mvc.js?R1CqtffrmZDT7m_JVpEbAQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.TUTMobMenuIcon.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.TUTMobMenuIcon.mvc.js?X7n8GUEIk+bulojqa8ZMow"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTLayouts.PortalBaseLayout.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTLayouts.PortalBaseLayout.mvc.js?zIaF2EmFDa40_puWIa56PQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTPageBlocks.HomeBlock.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTPageBlocks.HomeBlock.mvc.js?mvpiVko4wWCgnHlPpGgrlA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.BottomBar.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.BottomBar.mvc.js?ownGsM2zWZibma0RI2IkTg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.languageResources"
+        src="/ExamsLegacy/scripts/ExamsLegacy.languageResources.js?DxDfVNpLlrxfQyGGWaBVnQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.controller"
+        src="/ExamsLegacy/scripts/OutSystemsUI.controller.js?DD75bAXZJEhO9cOpH8hi_g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.model.js?yMkgHLyqRyZTIjlPa6v8Ug"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.DevWarning.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.DevWarning.mvc.js?Kpv_efhs6qf1vUhFzImEjA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Private.PullToRefresh.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Private.PullToRefresh.mvc.js?hT3lb1QR0rYWa5eBBoMLxQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.referencesHealth"
+        src="/ExamsLegacy/scripts/ExamsLegacy.referencesHealth.js?AiLTeRbOvaDqOqNtpC0p+w"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="UltimatePDF.controller"
+        src="/ExamsLegacy/scripts/UltimatePDF.controller.js?hF7Cc_9jD6egZ_HZnOzPwg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.ApplicationTitle.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.ApplicationTitle.mvc.js?FEvw3bBilWzX1E3PrKN2+g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.Common.UserInfo.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.Common.UserInfo.mvc.js?bwewsVVbzzfJLNb9K8r77w"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Interaction.Sidebar.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Interaction.Sidebar.mvc.js?IwaynuAbg3kJnjFjerQP8w"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.AdmStudentSelector.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.AdmStudentSelector.mvc.js?oRnNCAtFhtYfitSaTWw3Sw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Content.BlankSlate.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Content.BlankSlate.mvc.js?iI1T930CoqJZlPdPKGiATA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Private.NetworkStatusChanged.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Private.NetworkStatusChanged.mvc.js?R0K3OCtD7N8HlPhYGXTfrA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyDefaults_CS.model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyDefaults_CS.model.js?IJZluOgQh1z99MS7r_Jgxw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyPortal_CS.model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyPortal_CS.model.js?U0tJM+4Pkmy184z6Ei+JPw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTMarkdownEditor.MarkdownEditorFlow.MarkdownCSS.mvc$model"
+        src="/ExamsLegacy/scripts/TUTMarkdownEditor.MarkdownEditorFlow.MarkdownCSS.mvc.js?NWvhfGHMw1TwYRGr0Gi2Ng"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTLayouts.ErrorHandlerLayout.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTLayouts.ErrorHandlerLayout.mvc.js?PcB_8gZVMrAhuvSgbAX4jw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.ErrorBodyHelper.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.ErrorBodyHelper.mvc.js?znh1NX1G_yKdlT_pkos1WA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTLayouts.StandardLayout.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTLayouts.StandardLayout.mvc.js?jlwXePu9t4o9zmSXzKwFSw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.ContentCenter.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.ContentCenter.mvc.js?F++Kt3aJxtSzdPQCWunV5g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Generic.ReportCard.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Generic.ReportCard.mvc.js?NUJLvfobbUd967az3hIMGg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.ResetReport.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.ResetReport.mvc.js?VXdXoaWcmeveMlYUJfOzWg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Generic.BioCard.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Generic.BioCard.mvc.js?txpJdKhslXxqMC9g9D0yFw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTMarkdownEditor.MarkdownEditorFlow.MarkdownViewer.mvc$model"
+        src="/ExamsLegacy/scripts/TUTMarkdownEditor.MarkdownEditorFlow.MarkdownViewer.mvc.js?caQOSTF0bFwHx5kyvzwHOw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.HaveOtherExamWarning.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.HaveOtherExamWarning.mvc.js?kdq2QVofgnEpKfLRq12rjg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Results.Results_Dash.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Results.Results_Dash.mvc.js?LY74900FFOeOFdfLTat0JQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Content.Alert.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Content.Alert.mvc.js?s5PHVgvHO6TuACd_RhzfJg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Generic.Dash_Notice.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Generic.Dash_Notice.mvc.js?Vottj3za5pyG+vnqiCXGiw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Results.Fees_Dash.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Results.Fees_Dash.mvc.js?fgHjeuksRPCflcSxjd2fBg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.Generic.DisplayDebugMessages.mvc$model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.Generic.DisplayDebugMessages.mvc.js?p6fhnw4WSze_JvNbzf3uIA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Navigation.BottomBarItem.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Navigation.BottomBarItem.mvc.js?hDF9bJNCU0mDCFNXFtK_9w"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="UltimatePDF.model"
+        src="/ExamsLegacy/scripts/UltimatePDF.model.js?Fa9HlgSFBsCll3A8yufntQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.model"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.model.js?dC8Y+JC92EravPKGdyyYdA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTMarkdownEditor.model"
+        src="/ExamsLegacy/scripts/TUTMarkdownEditor.model.js?zGiUdYfdU1gYmtjiWfjDoA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.GenericNotice.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.GenericNotice.mvc.js?CvTismtBlSdCq43O7gjoxg"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.LoadingAnimation2.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.LoadingAnimation2.mvc.js?z52XYrpmzfnjdO4fAloRcQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTScreenTimer.ScreenTimer.ScreenTimer.mvc$model"
+        src="/ExamsLegacy/scripts/TUTScreenTimer.ScreenTimer.ScreenTimer.mvc.js?2f1OmPENdNYL0aILmL40ng"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.ErrorNotAStudentCard.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.ErrorNotAStudentCard.mvc.js?sz1GnndOAuIoSim0gc5mJw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.GlobalAccessCard.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.GlobalAccessCard.mvc.js?pRhhUbc6JAH4vBebbgoEWw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.referencesHealth"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.referencesHealth.js?hQZv57MA4qnAaUJqGDNjYA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Content.CardItem.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Content.CardItem.mvc.js?JnbxV_kMeWsnAa2emT41kA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTComponents.SmallGenericNotice.mvc$model"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTComponents.SmallGenericNotice.mvc.js?BTCPeioKDjBhCsugDcNk4g"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Content.Tag.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Content.Tag.mvc.js?U9z_94Rr0fQoCb5t45clkw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTScreenTimer.model"
+        src="/ExamsLegacy/scripts/TUTScreenTimer.model.js?zrVy85HMJS0XC4FtO_KW5A"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Interaction.Animate.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Interaction.Animate.mvc.js?IfTu8aZOSFWfTlD_rOPUqQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Utilities.AlignCenter.mvc$model"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Utilities.AlignCenter.mvc.js?WxoWyqmsi93fpefnCGicaw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.languageResources"
+        src="/ExamsLegacy/scripts/OutSystemsUI.languageResources.js?+RCkl5BBIsE_aUpw9DtIyw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="ExamsLegacy.TUTLayouts.BaseLayout.mvc$view"
+        src="/ExamsLegacy/scripts/ExamsLegacy.TUTLayouts.BaseLayout.mvc.js?UMNUej+SebwqtE+WA5LnxQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="OutSystemsUI.Content.Tooltip.mvc$view"
+        src="/ExamsLegacy/scripts/OutSystemsUI.Content.Tooltip.mvc.js?88AV2SV30PcvbLQcvZoi1A"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.controller"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.controller.js?H+g6FzrfCBMK36yxWFyiKw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.languageResources"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.languageResources.js?WquwpkjF0eppfgPzv+VRiQ"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTExamsLegacyCoreUI.clientVariables"
+        src="/ExamsLegacy/scripts/TUTExamsLegacyCoreUI.clientVariables.js?cCnF2DmO4S5qJCd8JsNaOw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTMarkdownEditor.controller"
+        src="/ExamsLegacy/scripts/TUTMarkdownEditor.controller.js?t+Hsl_RtHpnRitOFE52g5Q"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTMarkdownEditor.languageResources"
+        src="/ExamsLegacy/scripts/TUTMarkdownEditor.languageResources.js?7A_ZHDsTcLR8c4fSx_5ONw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTScreenTimer.controller"
+        src="/ExamsLegacy/scripts/TUTScreenTimer.controller.js?n7u8+FBf9_ecmdWb3X6dxA"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="TUTScreenTimer.languageResources"
+        src="/ExamsLegacy/scripts/TUTScreenTimer.languageResources.js?KxBuwUu1HolsYbsH5ZmvnA"></script>
+    <link type="text/css" rel="stylesheet" id="/ExamsLegacy/css/OutSystemsReactWidgets.css?kQjDkbMH8s8gQl+B0cPCxA"
+        href="/ExamsLegacy/css/OutSystemsReactWidgets.css?kQjDkbMH8s8gQl+B0cPCxA" data-os="true">
+    <link type="text/css" rel="stylesheet"
+        id="/ExamsLegacy/css/ExamsLegacy.TUTComponents.LoadingAnimation2.css?ppkalyDo5mbQI9V1eQdZug"
+        href="/ExamsLegacy/css/ExamsLegacy.TUTComponents.LoadingAnimation2.css?ppkalyDo5mbQI9V1eQdZug" data-os="true">
+    <link type="text/css" rel="stylesheet"
+        id="/ExamsLegacy/css/TUTMarkdownEditor.MarkdownEditorFlow.MarkdownCSS.css?9Qvxce4rNDr39rr8W6X2kQ"
+        href="/ExamsLegacy/css/TUTMarkdownEditor.MarkdownEditorFlow.MarkdownCSS.css?9Qvxce4rNDr39rr8W6X2kQ"
+        data-os="true">
+    <link type="text/css" rel="stylesheet"
+        id="/ExamsLegacy/css/TUTExamsLegacyCoreUI.Results.Results_Dash.css?geH5hqsf+adKHKzcUzvzqg"
+        href="/ExamsLegacy/css/TUTExamsLegacyCoreUI.Results.Results_Dash.css?geH5hqsf+adKHKzcUzvzqg" data-os="true">
+    <link type="text/css" rel="stylesheet" id="/ExamsLegacy/css/OutSystemsUI.OutSystemsUI.css?AkEc5FV8jemrX+hFFut4jg"
+        href="/ExamsLegacy/css/OutSystemsUI.OutSystemsUI.css?AkEc5FV8jemrX+hFFut4jg" data-os="true">
+    <link type="text/css" rel="stylesheet" id="/ExamsLegacy/css/ExamsLegacy.ExamsLegacy.css?W4IVKRwwyLJXVrL5RWJtog"
+        href="/ExamsLegacy/css/ExamsLegacy.ExamsLegacy.css?W4IVKRwwyLJXVrL5RWJtog" data-os="true">
+    <link type="text/css" rel="stylesheet"
+        id="/ExamsLegacy/css/ExamsLegacy.ExamsLegacy.extra.css?EHsyMbbWnNNszQnt0gsdpw"
+        href="/ExamsLegacy/css/ExamsLegacy.ExamsLegacy.extra.css?EHsyMbbWnNNszQnt0gsdpw" data-os="true">
+    <script src="/ExamsLegacy/scripts/OutSystemsUI.PullToRefresh.js?H6zDCf0UdAIPM2WNF4dAow"
+        data-os-finished="true"></script>
+    <script src="/ExamsLegacy/scripts/OutSystemsUI.OutSystemsUI.js?rhPmRRROwmYrNKNtd_jLlA"
+        data-os-finished="true"></script>
+    <script src="/ExamsLegacy/scripts/TUTScreenTimer.TimerIntervalSetup.js?wKuGTiK5Y4TpF7RsznVCVw"
+        data-os-finished="true"></script>
+    <script src="/ExamsLegacy/scripts/TUTMarkdownEditor.codemirror_min.js?gnm+vkQY7qy+Z8MMeN7klQ"
+        data-os-finished="true"></script>
+    <script src="/ExamsLegacy/scripts/TUTMarkdownEditor.toastuieditorall_min.js?BVFv1eu7F7OUzuvYSr6vkg"
+        data-os-finished="true"></script>
+    <script src="/ExamsLegacy/scripts/OutSystemsUI.MWO.js?fZcFt60k3mJDWeENwt0Gbg" data-os-finished="true"></script>
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.png">
+    <title>Exams Portal - Home</title>
+    <style id="__web-inspector-hide-shortcut-style__">
+        .__web-inspector-hide-shortcut__,
+        .__web-inspector-hide-shortcut__ *,
+        .__web-inspector-hidebefore-shortcut__::before,
+        .__web-inspector-hideafter-shortcut__::after {
+            visibility: hidden !important;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="windows is-ltr phone portrait"
+    style="--header-size-content: 0px; --footer-height: 56px; --viewport-height: 796px;">
+    <div id="reactContainer">
+        <div id="transitionContainer">
+            <div class="active-screen screen-container">
+                <div data-block="TUTLayouts.MobileLayout" class="OSBlockWidget" id="$b1">
+                    <div data-container="" class="layout layout-side layout-native ios-bounce aside-overlay"
+                        id="b1-LayoutWrapper"><a data-link="" class="skip-nav" href="#"
+                            aria-label="Skip to Content (Press Enter)" data-showskipcontent="false">Skip to Content
+                            (Press Enter)</a>
+                        <aside data-advancedhtml="" role="complementary" class="aside-navigation">
+                            <div id="b1-Navigation">
+                                <div data-block="Common.Menu" class="OSBlockWidget" id="$b2">
+                                    <nav data-advancedhtml="" class="app-menu-content display-flex" role="navigation"
+                                        tabindex="-1" aria-expanded="false">
+                                        <div data-container="" class="header-logo ph">
+                                            <div data-block="Common.ApplicationTitle" class="OSBlockWidget" id="b2-$b1">
+                                                <div data-container=""
+                                                    class="application-name display-flex align-items-center full-height"
+                                                    role="button" tabindex="-1" id="b2-b1-ApplicationTitleWrapper"
+                                                    style="cursor: pointer;"><img data-image="" class="app-logo"
+                                                        src="/ExamsLegacy/img/ExamsLegacy.Logo.png?JTgfGB2kLM2ulPLs7MhppQ"
+                                                        alt="" id="b2-b1-AppLogo" style="height: 32px;"><span
+                                                        data-expression="">Exams Portal</span></div>
+                                            </div>
+                                        </div>
+                                        <div data-container="" class="app-menu-links" role="menubar" id="b2-PageLinks">
+                                            <a data-link="" href="/ExamsLegacy/Home" role="menuitem"
+                                                tabindex="-1">Home</a><a class="ThemeGrid_MarginGutter" data-link=""
+                                                href="/ExamsLegacy/TimeTable" role="menuitem" tabindex="-1">Time
+                                                Table</a></div>
+                                        <div data-container="" class="app-login-info ph" id="b2-LoginInfo">
+                                            <div data-block="Common.UserInfo" class="OSBlockWidget" id="b2-$b2">
+                                                <div data-container="" class="user-info">
+                                                    <div data-container=""><img data-image="" class="img-circle"
+                                                            src="/ExamsLegacy/img/ExamsLegacy.User.png?5SFLvT1kwBAOHH7ZqnyPpA"
+                                                            alt="" style="width: 24px; height: 24px;">
+                                                        <div data-container="" class="margin-left-s"><span
+                                                                data-expression="">M Mamaila</span></div>
+                                                    </div>
+                                                    <div data-container="" class="margin-left-s"><a data-link=""
+                                                            class="OSFillParent" href="#" tabindex="-1"><i data-icon=""
+                                                                class="icon fa fa-sign-out fa-1x"
+                                                                id="b2-b2-Icon3"></i><span
+                                                                class="margin-left-s wcag-hide-text">Log out</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <div data-container="" class="app-menu-overlay" role="button"
+                                        style="cursor: pointer;"></div>
+                                </div>
+                            </div>
+                        </aside>
+
+
+                        <div data-container="" class="main">
+                            <header data-advancedhtml="" role="banner" class="header" id="b1-Header2"><a data-link=""
+                                    class="skip-nav" href="#" aria-label="Skip to Content (Press Enter)"
+                                    data-showskipcontent="false">Skip to Content (Press Enter)</a>
+                                <div data-container="" class="header-top">
+                                    <div data-container="" class="header-content display-flex">
+                                        <div data-container="" class="display-flex align-items-center full-width">
+                                            <div class="header-left" id="b1-HeaderLeft">
+                                                <div data-block="Common.TUTMobMenuIcon" class="OSBlockWidget" id="$b3">
+                                                    <div data-container="" class="app-menu-icon" id="b3-MenuIcon"
+                                                        style="margin-top: 0px;">
+                                                        <div data-container="" class="menu-icon"
+                                                            aria-label="Toggle the Menu" role="button" tabindex="0"
+                                                            aria-haspopup="true" style="cursor: pointer;">
+                                                            <div data-container="" class="menu-icon-line"
+                                                                aria-hidden="true"></div>
+                                                            <div data-container="" class="menu-icon-line"
+                                                                aria-hidden="true"></div>
+                                                            <div data-container="" class="menu-icon-line"
+                                                                aria-hidden="true"></div>
+                                                        </div>
+                                                        <div data-container="" class="menu-back"
+                                                            aria-label="Back to previous screen" role="button"
+                                                            tabindex="0" style="cursor: pointer;"><i data-icon=""
+                                                                class="icon fa fa-angle-left fa-2x"
+                                                                id="b3-ArrowBack"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <h1 data-advancedhtml="" class="header-title">
+                                                <div class="OSInline" id="b1-Title">Exams Portal</div>
+                                            </h1>
+                                            <div class="header-right" id="b1-HeaderRight"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-block="TUTComponents.DevWarning" class="OSBlockWidget" id="b1-$b1"></div>
+                                <div class="header-top-content ph" id="b1-HeaderContent"></div>
+                            </header>
+                            <div data-container="" class="content" id="b1-Content">
+                                <div data-container="" class="main-content ThemeGrid_Container" role="main"
+                                    id="b1-MainContentWrapper">
+                                    <div class="content-middle" id="b1-MainContent">
+                                        <div data-block="TUTLayouts.PortalBaseLayout" class="OSBlockWidget" id="$b4">
+                                            <div data-container="" id="b4-cContent">
+                                                <div data-container="" class="HideMeInPrint"></div>
+                                                <div id="b4-phMainArea">
+                                                    <div data-block="TUTPageBlocks.HomeBlock" class="OSBlockWidget"
+                                                        id="$b5">
+                                                        <div data-block="MarkdownEditorFlow.MarkdownCSS"
+                                                            class="OSBlockWidget" id="b5-$b1"></div>
+                                                        <div data-block="TUTLayouts.ErrorHandlerLayout"
+                                                            class="OSBlockWidget" id="b5-$b2">
+                                                            <div id="b5-b2-phMainArea">
+                                                                <div data-block="TUTLayouts.StandardLayout"
+                                                                    class="OSBlockWidget" id="b5-$b4">
+                                                                    <div data-container="" style="text-align: center;">
+                                                                        <div data-container="" class="StandardCenterBox"
+                                                                            id="b5-b4-cMainContainer">
+                                                                            <div id="b5-b4-phContent">
+                                                                                <div data-container="" id="b5-cBioCard"
+                                                                                    style="margin-bottom: 10px;">
+                                                                                    <div data-block="TUTComponents.ContentCenter"
+                                                                                        class="OSBlockWidget"
+                                                                                        id="b5-$b8">
+                                                                                        <div data-container=""
+                                                                                            class="OSInline"
+                                                                                            style="text-align: center; width: 100%;">
+                                                                                            <div data-container=""
+                                                                                                class="OSInline"
+                                                                                                style="text-align: left; max-width: 450px;">
+                                                                                                <div
+                                                                                                    id="b5-b8-phContent">
+                                                                                                    <div data-block="Generic.BioCard"
+                                                                                                        class="OSBlockWidget"
+                                                                                                        id="b5-$b9">
+                                                                                                        <div data-container=""
+                                                                                                            class="DropShadow">
+                                                                                                            <div data-block="Content.CardItem"
+                                                                                                                class="OSBlockWidget"
+                                                                                                                id="b5-b9-$b1">
+                                                                                                                <div data-container=""
+                                                                                                                    class="card card-detail ">
+                                                                                                                    <div class="ph card-detail-left OSInline"
+                                                                                                                        id="b5-b9-b1-Left">
+                                                                                                                        <div data-container=""
+                                                                                                                            class="ShowAvatar OSInline"
+                                                                                                                            style="width: 80px; align-items: center; background-color: rgb(208, 208, 208); border-radius: 50px; display: flex; height: 80px; justify-content: center;">
+                                                                                                                            <div data-container=""
+                                                                                                                                class="OSInline"
+                                                                                                                                style="width: 44px; height: 56px; margin: 0px;">
+                                                                                                                                <i data-icon=""
+                                                                                                                                    class="icon fa fa-user fa-4x"></i>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div data-container=""
+                                                                                                                        class="card-detail-center">
+                                                                                                                        <div class="ph card-detail-title"
+                                                                                                                            id="b5-b9-b1-Title">
+                                                                                                                            <span
+                                                                                                                                data-expression=""
+                                                                                                                                style="margin-left: 0px;">M
+                                                                                                                            </span><span
+                                                                                                                                data-expression=""
+                                                                                                                                style="margin-left: 0px;">MAMAILA</span>
+                                                                                                                        </div>
+                                                                                                                        <div class="ph card-detail-text text-grey"
+                                                                                                                            id="b5-b9-b1-Content">
+                                                                                                                            <div
+                                                                                                                                data-container="">
+                                                                                                                                <span
+                                                                                                                                    style="font-weight: bold;">Student
+                                                                                                                                    Number:
+                                                                                                                                </span><span
+                                                                                                                                    data-expression=""
+                                                                                                                                    style="margin-left: 0px;">232174285</span>
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                data-container="">
+                                                                                                                                <span
+                                                                                                                                    style="font-weight: bold;">Email:
+                                                                                                                                </span><span
+                                                                                                                                    data-expression=""
+                                                                                                                                    style="margin-left: 0px;">mukonamamaila@gmail.com</span>
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                data-container="">
+                                                                                                                                <span
+                                                                                                                                    style="font-weight: bold;">Cellphone:
+                                                                                                                                </span><span
+                                                                                                                                    data-expression=""
+                                                                                                                                    style="margin-left: 0px;">0682696396</span>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ph card-detail-right OSInline"
+                                                                                                                        id="b5-b9-b1-Right">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div data-block="Results.Results_Dash"
+                                                                                        class="OSBlockWidget"
+                                                                                        id="b5-$b14">
+                                                                                        <div data-list=""
+                                                                                            class="&quot;list list-group&quot; OSFillParent"
+                                                                                            style="position: relative;">
+                                                                                            <script
+                                                                                                style="display: flex; height: 0px; width: 100%;"></script>
+                                                                                            <div data-container=""
+                                                                                                class="DropShadow"
+                                                                                                style="margin-bottom: 10px; padding: 5px;">
+                                                                                                <div data-container=""
+                                                                                                    style="border-radius: 5px; font-size: 18px; font-weight: bold; margin-bottom: 8px; margin-top: 5px; padding: 5px 5px 7px 8px; background-color: var(--color-blue-darker); color: white;">
+                                                                                                    <span
+                                                                                                        data-expression="">RE-Exam 2023/12 (1 papers)</span>
+                                                                                                </div>
+                                                                                                <div data-container=""
+                                                                                                    class="ResultScrollBox">
+                                                                                                    <table class="table"
+                                                                                                        role="grid">
+                                                                                                        <thead>
+                                                                                                            <tr
+                                                                                                                class="table-header resultstbl-header">
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Subject
+                                                                                                                </th>
+                                                                        
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Paper
+                                                                                                                    Mark
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Final
+                                                                                                                    Mark
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Subject
+                                                                                                                    Result
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Time
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Paper
+                                                                                                                    No.
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Paper
+                                                                                                                    Description
+                                                                                                                </th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">EEA115D</span>
+                                                                                                                </td>
+                                                                                                               
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">57</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">51</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">Pass</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-12-1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">14:30</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">2</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                                <div data-container="" style="margin-top: 2px; padding: 5px;"><div data-block="MarkdownEditorFlow.MarkdownViewer" class="OSBlockWidget" id="b5-b14-l2-13_0-$b2"><div data-container="" id="b5-b14-l2-13_0-b2-Viewer"><div class="tui-editor-contents"><ol>
+                                                                                                    <li>Graduation Enquiries: www.tut.ac.za/graduations/about</li>
+                                                                                                    <li>Closing date for Exit Examination Applications: 19 January 2024.  (N/A to Distance Education Students).</li>
+                                                                                                    <li>Closing Date for Examination Enquiries: 26 January 2024.</li>
+                                                                                                    <li>Exit Examination: 5 - 9 February 2024.  (N/A to Distance Education Students).</li>
+                                                                                                    </ol>
+                                                                                                    </div></div></div></div>
+                                                                                            </div>
+                                                                                            <script
+                                                                                                style="display: flex; height: 0px; width: 100%;"></script>
+                                                                                    <div data-block="Results.Results_Dash"
+                                                                                        class="OSBlockWidget"
+                                                                                        id="b5-$b14">
+                                                                                        <div data-list=""
+                                                                                            class="&quot;list list-group&quot; OSFillParent"
+                                                                                            style="position: relative;">
+                                                                                            <script
+                                                                                                style="display: flex; height: 0px; width: 100%;"></script>
+                                                                                            <div data-container=""
+                                                                                                class="DropShadow"
+                                                                                                style="margin-bottom: 10px; padding: 5px;">
+                                                                                                <div data-container=""
+                                                                                                    style="border-radius: 5px; font-size: 18px; font-weight: bold; margin-bottom: 8px; margin-top: 5px; padding: 5px 5px 7px 8px; background-color: var(--color-blue-darker); color: white;">
+                                                                                                    <span
+                                                                                                        data-expression="">Main Exam 2023/11 (5 papers)</span>
+                                                                                                </div>
+                                                                                                <div data-container=""
+                                                                                                    class="ResultScrollBox">
+                                                                                                    <table class="table"
+                                                                                                        role="grid">
+                                                                                                        <thead>
+                                                                                                            <tr
+                                                                                                                class="table-header resultstbl-header">
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Subject
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Predicate
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Admission
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Paper
+                                                                                                                    Mark
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Final
+                                                                                                                    Mark
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Subject
+                                                                                                                    Result
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Time
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0"
+                                                                                                                    style="text-align: center;">
+                                                                                                                    Paper
+                                                                                                                    No.
+                                                                                                                </th>
+                                                                                                                <th class=""
+                                                                                                                    tabindex="0">
+                                                                                                                    Paper
+                                                                                                                    Description
+                                                                                                                </th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">COS115X</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Predicate">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 50px; display: inline-block;">88</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                data-header="Admission">
+                                                                                                                <div data-block="Content.Tag"
+                                                                                                                    class="OSBlockWidget"
+                                                                                                                    id="b5-b14-l2-13_0-l2_0-14_5-$b1">
+                                                                                                                    <div class="tag tag-small border-radius-rounded background-green OSInline"
+                                                                                                                        id="b5-b14-l2-13_0-l2_0-14_5-b1-Tag">
+                                                                                                                        YES
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">80</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">84</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">Pass</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-11-22</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">13:45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">DSA115D</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Predicate">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 50px; display: inline-block;">64</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Admission">
+                                                                                                                    <div data-block="Content.Tag"
+                                                                                                                        class="OSBlockWidget"
+                                                                                                                        id="b5-b14-l2-13_0-l2_0-14_5-$b1">
+                                                                                                                        <div class="tag tag-small border-radius-rounded background-green OSInline"
+                                                                                                                            id="b5-b14-l2-13_0-l2_0-14_5-b1-Tag">
+                                                                                                                            YES
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">72</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">69</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">Pass</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-11-21</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">13:45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">EEA115D</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Predicate">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 50px; display: inline-block;">45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                data-header="Admission">
+                                                                                                                <div data-block="Content.Tag"
+                                                                                                                    class="OSBlockWidget"
+                                                                                                                    id="b5-b14-l2-13_0-l2_0-14_5-$b1">
+                                                                                                                    <div class="tag tag-small border-radius-rounded background-green OSInline"
+                                                                                                                        id="b5-b14-l2-13_0-l2_0-14_5-b1-Tag">
+                                                                                                                        YES
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">28</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">-</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">RE-Exam Admission</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-11-10</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">13:45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">ETA115D</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Predicate">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 50px; display: inline-block;">69</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Admission">
+                                                                                                                    <div data-block="Content.Tag"
+                                                                                                                        class="OSBlockWidget"
+                                                                                                                        id="b5-b14-l2-13_0-l2_0-14_5-$b1">
+                                                                                                                        <div class="tag tag-small border-radius-rounded background-green OSInline"
+                                                                                                                            id="b5-b14-l2-13_0-l2_0-14_5-b1-Tag">
+                                                                                                                            YES
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">73</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">71</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">Pass Distinction</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-11-06</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">13:45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                class="resultstbl-row">
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 63px; display: inline-block;">MHA115D</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Predicate">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="width: 50px; display: inline-block;">57</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Admission">
+                                                                                                                    <div data-block="Content.Tag"
+                                                                                                                        class="OSBlockWidget"
+                                                                                                                        id="b5-b14-l2-13_0-l2_0-14_5-$b1">
+                                                                                                                        <div class="tag tag-small border-radius-rounded background-green OSInline"
+                                                                                                                            id="b5-b14-l2-13_0-l2_0-14_5-b1-Tag">
+                                                                                                                            YES
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression="">65</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Final Mark">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 90px;">61</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Subject Result">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 220px;">Pass</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Date">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 80px;">2023-11-14</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Time">
+                                                                                                                    <span
+                                                                                                                        data-expression=""
+                                                                                                                        style="display: inline-block; min-width: 40px;">13:45</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper No.">
+                                                                                                                    <span
+                                                                                                                        data-expression="">1</span>
+                                                                                                                </td>
+                                                                                                                <td style="text-align: center;"
+                                                                                                                    data-header="Paper Description">
+                                                                                                                    <span
+                                                                                                                        data-expression="">THEORY</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                                
+                                                                                            </div>
+                                                                                            <script
+                                                                                                style="display: flex; height: 0px; width: 100%;"></script>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div data-container=""
+                                                                                    id="b5-cFeesMessage">
+                                                                                    <div data-block="Results.Fees_Dash"
+                                                                                        class="OSBlockWidget"
+                                                                                        id="b5-$b17"></div>
+                                                                                </div>
+                                                                                <div data-container=""
+                                                                                    style="text-align: center; font-size: 12px; font-style: italic; margin-top: 10px;"
+                                                                                    id="b5-cTraceInformation"><span
+                                                                                        data-expression=""> Report
+                                                                                        Timestamp: 2023-11-27 19:20:26 /
+                                                                                        85, Cache Timestamp: 2023-11-29
+                                                                                        07:54:59, Render Timestamp:
+                                                                                        2023-11-29 07:54:57</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-block="ScreenTimer.ScreenTimer"
+                                                                class="OSBlockWidget" id="b5-b2-scTimeoutTimer">
+                                                                <div data-container="" id="b5-b2-b4-cParentTWidget">
+                                                                    <div data-container="" id="b5-b2-b4-EventContainer"
+                                                                        name="MyTimer" style="display: none;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-block="Generic.DisplayDebugMessages"
+                                                            class="OSBlockWidget" id="b5-$b19"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-block="Private.NetworkStatusChanged" class="OSBlockWidget"
+                                                id="b4-$b4">
+                                                <div data-container=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer data-advancedhtml="" role="contentinfo" class="content-bottom">
+                                    <div class="footer ph" id="b1-Bottom">
+                                        <div data-block="Common.BottomBar" class="OSBlockWidget" id="$b6">
+                                            <div data-container="" class="bottom-bar-wrapper HideMeInPrint">
+                                                <div data-container="" class="bottom-bar ph"><a data-link=""
+                                                        href="/ExamsLegacy/Home">
+                                                        <div data-block="Navigation.BottomBarItem" class="OSBlockWidget"
+                                                            id="b6-$b1">
+                                                            <div data-container="" class="bottom-bar-item ">
+                                                                <div class="ph bottom-bar-item-icon" id="b6-b1-Icon"
+                                                                    style="text-align: center;"><i data-icon=""
+                                                                        class="icon fa fa-home fa-2x"></i></div>
+                                                                <div class="ph bottom-bar-item-text" id="b6-b1-Text"
+                                                                    style="text-align: center;">Home</div>
+                                                            </div>
+                                                        </div>
+                                                    </a><a class="ThemeGrid_MarginGutter" data-link=""
+                                                        href="/ExamsLegacy/TimeTable">
+                                                        <div data-block="Navigation.BottomBarItem" class="OSBlockWidget"
+                                                            id="b6-$b2">
+                                                            <div data-container="" class="bottom-bar-item ">
+                                                                <div class="ph bottom-bar-item-icon" id="b6-b2-Icon"
+                                                                    style="text-align: center;"><i data-icon=""
+                                                                        class="icon fa fa-calendar fa-2x"></i></div>
+                                                                <div class="ph bottom-bar-item-text" id="b6-b2-Text"
+                                                                    style="text-align: center;">Time Tables</div>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <noscript><span>JavaScript is required</span></noscript>
+
+    <script type="text/javascript" src="scripts/ExamsLegacy.index.js?R8jYPGg3LY1Qow7vHdsbWw"></script>
+
+
+    <div class="tui-tooltip" style="display: none;">
+        <div class="arrow"></div><span class="text"></span>
+    </div>
+
+    </div>
+</body>
+
+</html>

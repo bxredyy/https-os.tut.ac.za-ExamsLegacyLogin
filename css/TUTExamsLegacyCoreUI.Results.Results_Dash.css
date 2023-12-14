@@ -1,0 +1,38 @@
+.ResultScrollBox {
+    overflow-x: scroll; 
+    /* overflow-y: scroll; */
+}
+
+.resultstbl-header th{
+    border-bottom:var(--border-size-s) solid var(--color-neutral-4);
+    border-left: var(--border-size-s) solid var(--color-neutral-4);
+}
+
+.resultstbl-row td {
+    padding: 5px 8px 5px 8px;
+    /*
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: #b0aaaa;
+    */
+    border-bottom:var(--border-size-s) solid var(--color-neutral-4);
+    border-left: var(--border-size-s) solid var(--color-neutral-4);
+}
+
+/* modification to table to remove background colour */
+.resulttable-row td{
+  border-bottom:var(--border-size-s) solid var(--color-neutral-4);
+  height:56px;
+  padding:var(--space-s) var(--space-m);
+  vertical-align:inherit;
+}
+.resulttable-row:hover td{
+  /* background:var(--color-neutral-2); */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    box-shadow: inset 0px 0px 5px rgba(112, 110, 110, 0.9);
+}
+.resulttable-row.table-row-selected td{
+  background:var(--color-primary) var(--color-primary-lightest);
+}
