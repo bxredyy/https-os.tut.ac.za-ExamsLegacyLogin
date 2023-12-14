@@ -1,0 +1,125 @@
+/* ===================================================================== */
+/*  The following CSS was created using Theme Editor.                    */
+/*  To modify this CSS, click "Open Theme Editor".                       */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/*  Root - CSS Variables                                                 */
+/* ===================================================================== */
+
+:root {
+	
+    /* Color - Brand */
+    --color-primary: #c3272b;
+    --color-secondary: #c3272b;
+
+    --color-primary-hover: #921d20;
+    --color-primary-selected: rgba(195, 39, 43, .12);
+	
+    /* App Settings */
+    --color-background-body: #f3f6f8;
+    --color-background-login: #ededed;
+    --header-color: #ffffff;
+	
+    /* Dark Theme */
+    --background-dark-theme: rgba(255, 255, 255, .1);
+    --background-dark-theme-hover: rgba(255, 255, 255, .2);
+}
+
+/* Login and Splash Color */
+
+.login-screen,
+.layout-native .login-screen {
+    background-color: var(--color-background-login);
+}
+
+
+/* fix bottom bar sticky bug */
+.layout-native .content-bottom { 
+    background-color: var(--color-neutral-0); 
+    position: fixed; 
+    width: 100%; 
+} 
+
+.layout-native .content-middle { 
+    padding-bottom: var(--footer-height); 
+}
+
+/*-----*/
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .tut-app-title {
+        display:none;
+    }
+}
+
+
+.layout .main-content.ThemeGrid_Container {
+    padding-top: 5px !important;
+}
+
+.DropShadow {
+
+background-color: #fff;
+border-radius: 5px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.DropShadowTrans {
+
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.DarkDropShadow {
+
+background-color: #fff;
+border-radius: 5px;
+box-shadow: rgba(60, 64, 67, 0.8) 0px 1px 2px 0px, rgba(60, 64, 67, 0.25) 0px 1px 3px 1px;
+
+}
+
+.DarkDropShadowTrans {
+
+box-shadow: rgba(60, 64, 67, 0.8) 0px 1px 2px 0px, rgba(60, 64, 67, 0.25) 0px 1px 3px 1px;
+
+}
+
+.CenterCenterOuter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.VerticalCenterOuter {
+    align-items: center;
+    display: flex;
+}
+@media print
+{    
+    * { overflow: visible !important; }
+    .HideMeInPrint { display: none; }
+}
+
+/* fix a bug on the sidebar. we can probably remove this once OS has fixed it. */
+.osui-sidebar--is-right:after{
+  left:-10px;
+}
+
+.StandardCenterBox {
+    margin: auto;
+margin-top: 15px;
+/* max-width: 450px; */
+padding: 0px 5px 0px 5px;
+text-align: left;
+}
+
+.alert {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+}
